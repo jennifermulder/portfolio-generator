@@ -20,9 +20,7 @@ const writeFile = fileContent => {
 };
 
 const copyFile = () => {
-    console.log(fileContent);
     return new Promise((resolve, reject) => {
-        console.log(fileContent);
         fs.copyFile('./src/style.css', './dist/style.css', err => {
             // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
             if (err) {
